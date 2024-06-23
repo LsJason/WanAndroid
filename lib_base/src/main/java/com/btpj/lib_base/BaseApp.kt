@@ -43,6 +43,11 @@ open class BaseApp : Application(), ViewModelStoreOwner {
         return mFactory as ViewModelProvider.Factory
     }
 
+    /**
+     * 获取ViewModelStore
+     *
+     * @return ViewModelStore
+     */
     override fun getViewModelStore(): ViewModelStore {
         return mAppViewModelStore
     }
